@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div class="footer__container-footer">
+
+      <div class="footer__title-footer">
+          <h3>OTHERS</h3>
+      </div>
+
+      <div class="footer__footer-buttoms">
+        <div class="footer__footer-buttomspokemon" *ngFor="let pokemon of pokemons" >
+          <app-pokemon-others [img]="pokemon.imgActual" (mouseover)="cambiarImg(true,pokemon.id)" (mouseout)="cambiarImg(false,pokemon.id)" ></app-pokemon-others>
+        </div>
+
+
+      </div>
+  </div>
+
+
+
+
+</footer>

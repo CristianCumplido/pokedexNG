@@ -1,0 +1,29 @@
+.footer__footer-buttomspokemon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  background-color: lightgray;
+  border-radius: 7rem;
+  cursor: pointer;
+}
+
+.footer__footer-buttomspokemon:hover {
+  background-color: gray;
+  border: black 2px solid;
+  transform: scale(1.1);
+
+}
+.footer__footer-buttomspokemon-img:hover {
+  transform: rotateY(360deg);
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.footer__footer-buttomspokemon-img {
+  height: 5rem;
+  width: 5rem;
+}

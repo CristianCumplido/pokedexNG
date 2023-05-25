@@ -1,0 +1,38 @@
+.header {
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: var(--header-height);
+  background-color: rgb(75, 64, 236);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Ubuntu", sans-serif;
+
+}
+
+.header__icon{
+    max-width: 7%;
+
+}
+@media screen and (max-width: 768px) {
+  .header__icon{
+      width: 3.125rem;
+height: 3.125rem;
+object-fit: contain;
+margin: 0.5rem 0.7rem;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .header__icon{
+      width: 3.125rem;
+height: 3.125rem;
+object-fit: contain;
+margin: 0.5rem 0.7rem;
+  }
+
+}
+.header__titleHeader {
+  font-size: 250%;
+}

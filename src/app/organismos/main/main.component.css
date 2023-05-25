@@ -1,0 +1,134 @@
+.main {
+  background-color: rgb(91, 206, 235);
+  border-left: rgb(55, 138, 233) 1.5px solid;
+  border-right: rgb(55, 138, 233) 1.5px solid;
+}
+
+.main_container {
+  display: grid;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main__container_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__container_rigth {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: auto;
+  padding: 0.625rem;
+  margin: 0.625rem;
+  border-radius: 15px;
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+}
+
+.main__card-title {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1rem;
+}
+
+.main_icon-water {
+  height: 7rem;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.main__title-name {
+  color: black;
+  margin-left: 0.3rem;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.main__image-pokemon {
+  position: relative;
+  top: 1.0rem;
+
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+th {
+    font-size: small;
+    width: 150px;
+}
+td{
+    font-weight: bold;
+
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+.cardInfo {
+  margin-bottom: 21px;
+  background-color: #212e8fd6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1rem;
+  color: #f0f0f0;
+}
+
+@media screen and (min-width: 500px) {
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .header, .footer, .main {
+    grid-column: 1 / -1;
+    clear: both;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .main__container_rigth {
+    width: 30%;
+  }
+}
+
+.wrapper>* {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper>* {
+    width: auto;
+    margin: 0;
+  }
+}

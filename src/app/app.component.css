@@ -1,0 +1,19 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 100px;
+  min-width: 320px;
+}
+
+body {
+  margin: 7px;
+  background: rgb(211, 211, 211);
+
+}.wrapper {
+
+  margin: 0 20px;
+  display: grid;
+  /* grid-gap: 1px; */
+}

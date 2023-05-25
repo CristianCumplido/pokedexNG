@@ -1,0 +1,79 @@
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: white;
+  border-left: gray 1.5px solid;
+  border-right: gray 1.5px solid;
+  border-bottom: gray 1.5px solid;
+}
+.footer__footer-buttomspokemon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  background-color: lightgray;
+  border-radius: 7rem;
+  cursor: pointer;
+}
+
+.footer__footer-buttomspokemon:hover {
+  background-color: gray;
+  border: black 2px solid;
+  transform: scale(1.1);
+
+}
+
+.footer__footer-buttomspokemon-img:hover {
+  transform: rotateY(360deg);
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.footer__footer-buttomspokemon-img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.footer__footer-buttoms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 10px 0px;
+  background-color: white;
+}
+
+.footer__container-footer {
+  align-items: center;
+  object-fit: scale-down;
+  justify-content: space-between;
+}
+@media screen and (min-width: 500px) {
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer__title-footer {
+    margin-right: 5rem;
+  }
+
+  .footer__container-footer {
+    display: flex;
+    align-items: center;
+    object-fit: scale-down;
+    justify-content: space-between;
+  }
+
+  .footer__footer-buttoms {
+    display: flex;
+  }
+}

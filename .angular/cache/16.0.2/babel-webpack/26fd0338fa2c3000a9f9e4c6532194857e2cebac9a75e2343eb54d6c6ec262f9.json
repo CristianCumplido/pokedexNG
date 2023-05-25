@@ -1,0 +1,1 @@
+{"ast":null,"code":"export {};","map":{"version":3,"names":[],"sources":["C:\\Users\\cristian.cumplido_pr\\Documents\\pokedexNG\\src\\app\\models\\list-pokemon.ts"],"sourcesContent":["export interface IPokemon{\r\n  id: number,\r\n  name:string,\r\n  img:string\r\n}\r\n\r\n"],"mappings":""},"metadata":{},"sourceType":"module","externalDependencies":[]}
